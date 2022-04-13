@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/login.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
@@ -18,7 +18,7 @@
           <div class="field space">
             <span class="fa fa-lock"></span>
             <input type="password" class="pass-key" required placeholder="Password">
-            <span class="show">SHOW</span>
+            <span class="show">MOSTRA</span>
           </div>
           <div class="pass">
             <a href="#">Password dimenticata?</a>
@@ -41,7 +41,23 @@
         </div>
       </div>
     </div>
-
+    <script>
+      const pass_field = document.querySelector('.pass-key');
+      const showBtn = document.querySelector('.show');
+      showBtn.addEventListener('click', function(){
+       if(pass_field.type === "password"){
+         pass_field.type = "text";
+         showBtn.textContent = "MOSTRA";
+         showBtn.style.color = "#3498db";
+          showBtn.style.fontSize = "60%";
+       }else{
+         pass_field.type = "password";
+         showBtn.textContent = "NASCONDI";
+         showBtn.style.color = "#222";
+         showBtn.style.fontSize = "60%";
+       }
+      });
+    </script>
 
 
 
