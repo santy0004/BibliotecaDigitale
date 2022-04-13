@@ -16,36 +16,12 @@
         <header>
             <div class="nav-wrapper">
                 <nav>
-                    
                     <input class="hidden" type="checkbox" id="menuToggle">
                     <label class="menu-btn" for="menuToggle">
                         <div class="menu"></div>
                         <div class="menu"></div>
                         <div class="menu"></div>
-                    </label>
-                    
-                    <div class="nav-container">
-                        
-                        <ul class="nav-tabs">
-                            <div class="logo-container">
-                                <img class="logo" src="./img/pon.png" alt="Logo"> 
-                            </div>
-                            <div class="logo-container">
-                                <img class="logo" src="./img/logo_pacinotti.png" alt="Logo"> 
-                            </div>
-                            <div id="search-field">
-                                <input id="search" type="text" placeholder="Cerca per..." required>
-                                <button class="bott"><svg id="search-icon" class="search-icon" viewBox="0 0 24 24">
-                                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                                    <path d="M0 0h24v24H0z" fill="none"/> 
-                                </svg></button>
-                            </div>
-                        </ul>
-                    </div>
-                </nav> 
-            </div>       
-        <div class="nav-wrapper">
-            <nav>
+                    </label>            
                 <div class="nav-container">
                     <ul class="nav-tabs">
                         <li class="nav-tab">Home</li>
@@ -53,7 +29,10 @@
                         <li class="nav-tab">Contatti</li>
                     </ul>
                 </div>
-            </nav>
+                </nav>
+                    <div class="logo-container">
+                <img class="logo" src="./img/logo_pacinotti.png" alt="Logo"> 
+                </div>
             <nav>
                 <div class="nav-container">
                     <ul class="nav-tabs">                     
@@ -62,12 +41,26 @@
                     </ul>
                 </div>
             </nav>  
-        </div>       
-    </header>
+            </div>       
+        </header>
     <div class="center"> 
         <h1>DIO CANE</h1>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="#about">About</a>
+              <a href="#base">Base</a>
+              <a href="#blog">Blog</a>
+              <a href="#contact">Contact</a>
+              <a href="#custom">Custom</a>
+              <a href="#support">Support</a>
+              <a href="#tools">Tools</a>
+            </div>
+          </div>
     </div> 
-    
+    <script src="./js/dropsearch.js"></script> 
 </div>
+
 </body>
 </html>
