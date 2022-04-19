@@ -379,22 +379,29 @@ h1 {
 	}
 	table
 	{
-		border:20px;
-		padding: 10px;
-		width:60%; 
+		padding: 20px;
+		width:50%; 
 		height:60%; 
 		background-color: white;
+		border: 3px solid purple;
 	}
-	tr , td
-	{
-		color: black;
-	}
+	th {
+		letter-spacing: 5px;
+		border: 3px solid purple;
+	  }  
+	  td {
+		letter-spacing: 1px;
+		border: 3px solid purple;
+	  }
+	  
+	  tbody td {
+		text-align: left;
+	  }
 	.tab_center
-	{
-		display: flex;
-		margin-left: auto; 
-		margin-right: auto;
-		justify-content: center;
-		align-items: center;
-		margin-top: 15%;
-	}
+{
+	display: flex;
+	margin-left: auto; 
+	margin-right: auto;
+	justify-content: center;
+	margin-top: 15%;
+}
