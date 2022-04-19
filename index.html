@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Istituto d'Istruzione Superiore A.Pacinotti</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 </head>
 <body>
     <div class="sfondohome">
@@ -25,9 +25,9 @@
                     </label>  
                     <div class="nav-container">
                     <ul class="nav-tabs">
-                        <li class="nav-tab">Home</li>
-                        <li class="nav-tab">Orari</li>
-                        <li class="nav-tab">Contatti</li>
+                        <li class="nav-tab"><a href="">Home</a></li>
+                        <li class="nav-tab"><a href="">Orari</a></li>
+                        <li class="nav-tab"><a href="">Contatti</a></li>
                     </ul>
                 </div>
                 </nav>
@@ -44,6 +44,7 @@
             </nav>  
             </div>       
         </header>
+        <div class="content-container">
     <div class="center"> 
         <h1>bababoi
         </h1>
@@ -51,7 +52,7 @@
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">&mapstodown; Per Cercare &mapstodown;</button>
         <div id="myDropdown" class="dropdown-content">
-          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <input type="text" placeholder="Cerca.." id="myInput" onkeyup="filterFunction()">
           <a href="#">Titolo</a>
           <a href="#">Generi</a>
           <a href="#">Autori</a>
@@ -59,9 +60,6 @@
           <a href="#">Lingua</a>
         </div>
     </div>  
-
-    
-
 <div id="mySidenav" class="sidenav">
     <a href="" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">Romanzo</a>
@@ -84,10 +82,10 @@
     <a href="#">Ragazzi</a>
     <a href="#">Bambini</a>
   </div>
-  
+</div> 
   <h2></h2>
-  <p>Clicca per esplorare tutti i generi.</p>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Clicca qui</span>
+  <p class="opennav" >Clicca per esplorare tutti i generi.</p>
+  <span class="opennav" onclick="openNav()">&#9776; Clicca qui</span>
   
   <script>
   function openNav() {

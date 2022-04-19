@@ -291,7 +291,7 @@ h1 {
 	font-size: 16px;
 	border: none;
 	cursor: pointer;
-	width: 150px;
+	width: 160px;
 	right: 50px;
 	
   }
@@ -349,4 +349,17 @@ h1 {
       display: block;
     }
   
-  
+	.opennav{
+		position: relative;
+		display: flex;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left:  50px; 
+		margin-right: auto;
+		justify-content: flex-start;
+		font-size:30px;
+		cursor:pointer
+	}
+	.content-container{
+		
+	}
