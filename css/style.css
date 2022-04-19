@@ -360,6 +360,41 @@ h1 {
 		font-size:30px;
 		cursor:pointer
 	}
+	.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		background-color: black;
+		color: white;
+		text-align: center;
+		font-size: 18px;
+	}
 	.content-container{
-		
+		display: flex;
+		margin-left: auto; 
+		margin-right: auto;
+		justify-content: center;
+	}
+	table
+	{
+		border:20px;
+		padding: 10px;
+		width:60%; 
+		height:60%; 
+		background-color: white;
+	}
+	tr , td
+	{
+		color: black;
+	}
+	.tab_center
+	{
+		display: flex;
+		margin-left: auto; 
+		margin-right: auto;
+		justify-content: center;
+		align-items: center;
+		margin-top: 15%;
 	}
