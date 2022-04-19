@@ -293,7 +293,7 @@ h1 {
 	cursor: pointer;
 	width: 160px;
 	right: 50px;
-	
+	display: block;
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -346,7 +346,14 @@ h1 {
     }
   
   .show {
-      display: block;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	width: 160px;
+	right: 50px;
+	display: block;
+	  
     }
   
 	.opennav{
@@ -372,36 +379,62 @@ h1 {
 		font-size: 18px;
 	}
 	.content-container{
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	margin-left: auto;
+	min-width: 100%;
+	height: 100px;
+	padding: 0 15px;
+}
+@media screen and (max-width: 821px) {
+	.content-container
+	{
 		display: flex;
-		margin-left: auto; 
-		margin-right: auto;
-		justify-content: center;
+		position: relative;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+		margin: auto;
+		margin-left: auto;
+		min-width: 100%;
+		height: 100px;
+		padding: 0 15px;
 	}
+}
 	table
 	{
-		padding: 20px;
-		width:50%; 
-		height:60%; 
+		padding: 10px;
+		width:60%; 
+		height:80%; 
 		background-color: white;
-		border: 3px solid purple;
 	}
-	th {
-		letter-spacing: 5px;
-		border: 3px solid purple;
+	th,td  {
+		letter-spacing: 1px;	
 	  }  
-	  td {
-		letter-spacing: 1px;
-		border: 3px solid purple;
-	  }
-	  
-	  tbody td {
+	#bordo {
+	 border:  3px solid black;
+	}	  
+	tbody td {
 		text-align: left;
-	  }
-	.tab_center
-{
+	}
+	.tab_center {
 	display: flex;
 	margin-left: auto; 
 	margin-right: auto;
 	justify-content: center;
 	margin-top: 15%;
+	}
+
+@media screen and (max-width: 821px) {
+	th,td 
+	{
+		width:25%;
+		height:30%;
+	}
 }
