@@ -1,11 +1,17 @@
-   html,
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html,
 body {
 	margin: 0;
 	overflow: hidden;
-	font-family: "Roboto", sans-serif;
 }
 * {
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
 }
 .sfondohome{
 		margin: 0;
@@ -78,6 +84,7 @@ h1 {
 	font-size: 18px;
 	list-style: none;
 }
+
 
 .nav-tab:not(:last-child) {
 	padding: 10px 25px;
@@ -236,17 +243,59 @@ h1 {
 	  text-decoration: dotted;
 	  color: #111;
   }
-  .dropbtn {
-	background-color: #04AA6D;
-	color: white;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.dropbtn {
+	background-color: #111;
+	color: #ddd;
 	padding: 16px;
 	font-size: 16px;
 	border: none;
 	cursor: pointer;
+	width: 150px;
+	right: 50px;
+	
   }
   
   .dropbtn:hover, .dropbtn:focus {
-	background-color: #3e8e41;
+	background-color: #fff;
+	color: black;
   }
   
   #myInput {
@@ -257,7 +306,7 @@ h1 {
 	font-size: 16px;
 	padding: 14px 20px 12px 45px;
 	border: none;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #fff;
   }
   
   #myInput:focus {
@@ -266,14 +315,17 @@ h1 {
   
   .dropdown {
 	position: relative;
-	display: inline-block;
+	display: flex;
+	margin-left: auto; 
+	margin-right: 100px;
+	justify-content: flex-end
   }
   
   .dropdown-content {
 	display: none;
-	position: absolute;
+	position: center;
 	background-color: #f6f6f6;
-	min-width: 230px;
+	width: 150px;
 	overflow: auto;
 	border: 1px solid #ddd;
 	z-index: 1;
@@ -293,3 +345,5 @@ h1 {
   .show {
       display: block;
     }
+  
+  

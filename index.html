@@ -20,6 +20,8 @@
                         <div class="menu"></div>
                         <div class="menu"></div>
                         <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
                     </label>  
                     <div class="nav-container">
                     <ul class="nav-tabs">
@@ -43,23 +45,58 @@
             </div>       
         </header>
     <div class="center"> 
-        <h1>DIO CANE</h1>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-            <div id="myDropdown" class="dropdown-content">
-              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-              <a href="#about">About</a>
-              <a href="#base">Base</a>
-              <a href="#blog">Blog</a>
-              <a href="#contact">Contact</a>
-              <a href="#custom">Custom</a>
-              <a href="#support">Support</a>
-              <a href="#tools">Tools</a>
-            </div>
-          </div>
-    </div> 
-    <script src="./js/dropsearch.js"></script> 
-</div>
+        <h1>bababoi
+        </h1>
+    </div>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">&mapstodown; Per Cercare &mapstodown;</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="#">Titolo</a>
+          <a href="#">Generi</a>
+          <a href="#">Autori</a>
+          <a href="#">Anno</a>
+          <a href="#">Lingua</a>
+        </div>
+    </div>  
 
+    
+
+<div id="mySidenav" class="sidenav">
+    <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Romanzo</a>
+    <a href="#">Romanzo Storico</a>
+    <a href="#">Romanzo di Formazione</a>
+    <a href="#">Giallo</a>
+    <a href="#">Thriller</a>
+    <a href="#">Avventura </a>
+    <a href="#">Azione</a>
+    <a href="#">Fumetti</a>
+    <a href="#">Fantascienza</a>
+    <a href="#">Distopia</a>
+    <a href="#">Fantasy</a>
+    <a href="#">Young Adult</a>
+    <a href="#">Erotico</a>
+    <a href="#">Fiaba</a>
+    <a href="#">Ragazzi</a>
+    <a href="#">Bambini</a>
+    
+  </div>
+  
+  <h2></h2>
+  <p>Clicca per esplorare tutti i generi.</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Clicca qui</span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+ <script src="./js/dropsearch.js"></script>  
+</div> 
 </body>
 </html>
