@@ -6,3 +6,5 @@ Collaboratori, e sviluppatori
 Vito Santolo. Creatore del progetto.
 
 Emanuele DeMartino. Collaboratore del progetto.
+
+Alessio Contino. Collaboratore del progetto.
