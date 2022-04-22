@@ -15,10 +15,7 @@ body {
 }
 .sfondohome{
 		margin: 0;
-		background:  url(../img/sfondopaci.jpg)  no-repeat center top;
-		position: absolute;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
+		background: url("../img/sfondopaci.jpg") no-repeat center ;
 		-o-background-size: cover;
 		background-size: cover;
 		width: 100%;
@@ -308,6 +305,7 @@ th,td
 }
 
 	.opennav{
+		color: #fff;
 		position: relative;
 		display: flex;
 		margin-top: auto;
@@ -477,7 +475,7 @@ th,td
 
 @media screen and (prefers-color-scheme: dark) {
 	.search-bar input {
-		box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+		box-shadow: 0 0 0 0.4em #fff inset;
 	}
 	.search-bar input:focus,
 	.search-bar input:valid {
@@ -506,6 +504,12 @@ th,td
   .card{
      margin: 10px;  
 	 flex: 1;
-	 color: purple;
-	 
+	 color: white;
+	 font-style: bold;
+	 font-weight: 200;
+  }
+  #descrizionearticolo{
+	  margin: 0;
+	  width: 170px;
+	  background-color: #000;
   }
