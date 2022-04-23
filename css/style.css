@@ -21,6 +21,7 @@ body {
 		width: 100%;
 		height: 100vh;
 }
+/* RESPONSIVE */
 @media (max-width: 821px){
 	.sfondohome{
 		position: fixed;
@@ -63,7 +64,7 @@ h1 {
 	background: #fff;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
-
+/* FOTO NAVBAR */
 .logo-container {
 	display: flex;
 	justify-content: center;
@@ -74,7 +75,7 @@ h1 {
 	height: 80px;
 	min-width: 300px;
 }
-
+/* NAVBAR */
 .nav-tabs {
 	display: flex;
 	font-weight: 6	00;
@@ -122,6 +123,7 @@ h1 {
 		width:100%;
         height:100%;
 	}
+	/* LOGO PACINOTTI NAVBAR */
     .logo {
         position: relative;
     }
@@ -137,7 +139,7 @@ h1 {
 	.nav-tab:last-child {
 		padding: 15px 25px;
 	}
-
+	/* MENU TELEFONO */
 	.menu-btn {
 		position: relative;
 		display: block;
@@ -199,6 +201,7 @@ h1 {
 		}
 	}
 }
+/* TABELLA ORARI */
 table
 {
 	padding: 20px;
@@ -256,7 +259,7 @@ margin-top: 15%;
 	align-items: center;
 }
 }
-
+/* ACCEDI REGISTRATI TELEFONO */
 .log{
 	display: none;
 }
@@ -265,26 +268,11 @@ margin-top: 15%;
 		display: block;
 	}
 }
-	.bott {
-	background-color: #111;
-	border: none;
-	padding: 12px 16px;
-	font-size: 16px;
-	cursor: pointer;
-	text-align: center;
-  }
-  .bott2 {
-	background-color: #111;
-	border: none;
-	padding: 12px 16px;
-	font-size: 16px;
-	cursor: pointer;
-	text-align: center;
-  }
   a {
 	  text-decoration: dotted;
 	  color: #111;
   }
+  /* SIDENAV GENERI */
 .sidenav {
   height: 100%;
   width: 0;
@@ -346,6 +334,7 @@ margin-top: 15%;
 			margin-left: 30px; 
 		}
 	}
+	/* UDA 2022 FOOTER*/
 	.footer {
 		position: fixed;
 		left: 0;
@@ -357,6 +346,7 @@ margin-top: 15%;
 		text-align: center;
 		font-size: 18px;
 	}
+	/* CONTENITORE SIDENAV-SEARCHBAR */
 	.content-container{
 	display: flex;
 	position: relative;
@@ -384,6 +374,7 @@ margin-top: 15%;
 		padding: 0 15px;
 	}
 }
+/* SEARCH ICON - SEARCH BAR*/
 .search-bar input,
 .search-btn, 
 .search-btn:before, 
@@ -510,6 +501,7 @@ margin-top: 15%;
 		background: #fff;
 	}
 }
+/*LIBRI HOME*/
 .card-container::-webkit-scrollbar {
 	display: none;
   }
@@ -540,6 +532,42 @@ margin-top: 15%;
 	  width: 170px;
 	  background-color: #000;
   }
+  
+  .descrizioneclasse{
+	position: relative;
+	top:30%;
+	left :20%;
+	text-align: justify;
+	border-radius: 10px;
+	margin: 0 auto;
+	background: #818181;
+	width: 500px;
+	padding: 20px;
+	color: #fff;
+	margin-right: 50%;
+	margin-bottom:0%;
+	font-size: 18px;
+   }
+   @media screen and (max-width: 821px) {
+	   .descrizioneclasse{
+		   position: fixed;
+		   right: 50%;
+		   left: 50%;
+		   align-items: center;
+		   text-align: justify;
+		   border-radius: 10px;
+		   margin: 0 auto;
+		   background: #818181;
+		   width: 300px;
+		   padding: 14px;
+		   color: #fff;
+		   font-size: 18px;
+		   left: 50%;
+		   top: 50%;
+		   transform: translate(-50%, -50%);
+		  }
+   }
+  /* CONTATTI MENU HOVER (Pacinotti-4L-5L)*/
   .dropdown {
 	overflow: hidden;
   }
@@ -624,37 +652,3 @@ margin-top: 15%;
 		display: block;
 	  }
   }
-  .descrizioneclasse{
- position: relative;
- top:30%;
- left :20%;
- text-align: justify;
- border-radius: 10px;
- margin: 0 auto;
- background: #818181;
- width: 500px;
- padding: 20px;
- color: #fff;
- margin-right: 50%;
- margin-bottom:0%;
- font-size: 18px;
-}
-@media screen and (max-width: 821px) {
-	.descrizioneclasse{
-		position: fixed;
-		right: 50%;
-		left: 50%;
-		align-items: center;
-		text-align: justify;
-		border-radius: 10px;
-		margin: 0 auto;
-		background: #818181;
-		width: 300px;
-		padding: 14px;
-		color: #fff;
-		font-size: 18px;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-	   }
-}
