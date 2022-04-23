@@ -528,7 +528,10 @@ margin-top: 15%;
 	 color: white;
 	 font-style: bold;
 	 font-weight: 200;
-  }
+	}
+	p{
+		text-align: center;
+	}
   #descrizionearticolo{
 	  margin: 0;
 	  width: 170px;
