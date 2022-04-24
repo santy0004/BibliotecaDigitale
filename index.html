@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Istituto d'Istruzione Superiore A.Pacinotti</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 </head>
 <body>
     <div class="sfondohome">
@@ -29,10 +28,10 @@
                         <li class="nav-tab"><a href="">Home</a></li>
                         <li class="nav-tab"><a href="./Orario/Orari.html">Orari</a></li>
                         <div class="dropdown">
-                            <li class="dropbtn">
+                            <li class="dropbottn">
                                 <li class="nav-tab">Contatti</a></li> 
                               <i class="fa fa-caret-down"></i>
-                            <div class="dropdown-content">
+                            <div class="dropdowncontent">
                               <a href="https://www.itipacinotti.edu.it/iti/" target="_blank">I.I.S Pacinotti</a>
                               <a href="./Contatti/Contatto4l.html">Classe 4L</a>
                               <a href="./Contatti/Contatto5l.html">Classe 5L</a>
@@ -84,12 +83,17 @@
     <a href="#">Bambini</a>
   </div>
   <!-- SEARCH BOX -->
-  <form action="" class="search-bar">
-	<input type="search" name="search" pattern=".*\S.*" required>
-	<button class="search-btn" type="submit">
-		<span>Search</span>
-	</button>
-    </form>
+ 
+<div class="drop-down">
+  <button onclick="myFunction()" class="dropbtn">&dArr; Cerca qui &dArr;</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Cerca.." id="myInput">
+    <a href="#">Titoli</a>
+    <a href="#">Generi</a>
+    <a href="#">Autore</a>
+    <a href="#">Anno</a>
+  </div>
+</div>
 </div> 
 <!-- LIBRI HOME  -->
     <div class="card-container">
@@ -163,9 +167,10 @@
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
-
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
   </script>
-
  <!-- FOOTER -->
  <div class="footer">
     UDA 2022
