@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it" >
+<head>  
+  <meta charset="UTF-8">
+  <title>Biblioteca Digitale</title>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Istituto d'Istruzione Superiore A.Pacinotti</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="sfondohome">
+        <header>
+            <!-- NAVBAR SUPERIORE -->
+            <div class="nav-wrapper">
+                <nav>
+                    <input class="hidden" type="checkbox" id="menuToggle">          
+                     <label class="menu-btn" for="menuToggle">
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                    </label>  
+                    <div class="nav-container">
+                    <ul class="nav-tabs">
+                        <li class="nav-tab"><a href="">Home</a></li>
+                        <li class="nav-tab"><a href="./Orario/Orari.html">Orari</a></li>
+                        <div class="dropdown">
+                            <li class="dropbottn">
+                                <li class="nav-tab">Contatti</a></li> 
+                              <i class="fa fa-caret-down"></i>
+                            <div class="dropdowncontent">
+                              <a href="https://www.itipacinotti.edu.it/iti/" target="_blank">I.I.S Pacinotti</a>
+                              <a href="./Contatti/Contatto3l.html">Classe 3L</a>
+                              <a href="./Contatti/Contatto4l.html">Classe 4L</a>
+                              <a href="./Contatti/Contatto5l.html">Classe 5L</a>
+                            </div>
+                          </div> 
+                        <li class="nav-tab" ><a href="./Prestito/Libri_Prestati.html">Prestito</li></a>
+                        <li class="nav-tab log" ><a href="./Login/index.html">Accedi</li></a>
+                        <li class="nav-tab log"><a href="./Registrati/Registrazione.html">Iscriviti</li></a>
+                   </ul>
+                </div>
+                </nav>
+                    <div class="logo-container">
+                <img class="logo" src="./img/logo_pacinotti.png" alt="Logo"> 
+                </div>
+            <nav>
+              <div class="nav-container">
+                <ul class="nav-tabs">
+              <div class="dropdown">
+                <li class="dropbottn">
+                    <li class="nav-tab">Accedi</a></li> 
+                  <i class="fa fa-caret-down"></i>
+                <div class="dropdowncontent">
+                  <a href="./Login/index.html">Utente</a>
+                  <a href="./Login/accedi_adm.html  ">Amministratore</a>
+                </div>
+              </div> 
+                        <li class="nav-tab"><a href="./Registrati/Registrazione.html">Iscriviti</li></a>
+                       </ul>
+                </div>
+              </nav>  
+            </div>       
+        </header>
+        
+        <div class="content-container"> 
+     <!-- SIDEBAR GENERI-->       
+  <span class="opennav" onclick="openNav()">&#9776; Clicca qui per esplorare tutti i generi.</span> 
+<div id="mySidenav" class="sidenav">
+    <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#Romanzo">Romanzo</a>
+    <a href="#RomSto">Romanzo Storico</a>
+    <a href="#RomFor">Romanzo di Formazione</a>
+    <a href="#Giallo">Giallo</a>
+    <a href="#Thriller">Thriller</a>
+    <a href="#Horror">Horror</a>
+    <a href="#Avven">Avventura </a>
+    <a href="#Azione">Azione</a>
+    <a href="#Fumetti">Fumetti</a>
+    <a href="#Manga">Manga</a>
+    <a href="#Fanta">Fantascienza</a>
+    <a href="#Distopia">Distopia</a>
+    <a href="#Utopia">Utopia</a>
+    <a href="#Fantasy">Fantasy</a>
+    <a href="#">Young Adult</a>
+    <a href="#">Erotico</a>
+    <a href="#">Fiaba</a>
+    <a href="#">Ragazzi</a>
+    <a href="#">Bambini</a>
+  </div>
+  <!-- SEARCH BOX -->
+ 
+<div class="drop-down">
+  <button onclick="myFunction()" class="dropbtn">&dArr; Cerca qui &dArr;</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Cerca.." id="myInput">
+    <a href="#">Titoli</a>
+    <a href="#">Generi</a>
+    <a href="#">Autore</a>
+    <a href="#">Anno</a>
+  </div>
+</div>
+</div> 

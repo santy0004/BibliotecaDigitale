@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="it" >
+<head>  
+  <meta charset="UTF-8">
+  <title>Biblioteca Digitale</title>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Istituto d'Istruzione Superiore A.Pacinotti</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="sfondohome">
+        <header>
+            <!-- NAVBAR SUPERIORE -->
+            <div class="nav-wrapper">
+                <nav>
+                    <input class="hidden" type="checkbox" id="menuToggle">          
+                     <label class="menu-btn" for="menuToggle">
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                    </label>  
+                    <div class="nav-container">
+                    <ul class="nav-tabs">
+                        <li class="nav-tab"><a href="">Home</a></li>
+                        <li class="nav-tab"><a href="../Orario/Orari.html">Orari</a></li>
+                        <div class="dropdown">
+                            <li class="dropbottn">
+                                <li class="nav-tab">Contatti</a></li> 
+                              <i class="fa fa-caret-down"></i>
+                            <div class="dropdowncontent">
+                              <a href="https://www.itipacinotti.edu.it/iti/" target="_blank">I.I.S Pacinotti</a>
+                              <a href="../Contatti/Contatto3l.html">Classe 3L</a>
+                              <a href="../Contatti/Contatto4l.html">Classe 4L</a>
+                              <a href="../Contatti/Contatto5l.html">Classe 5L</a>
+                            </div>
+                          </div> 
+                        <li class="nav-tab" ><a href="../Prestito/Libri_Prestati.html">Prestito</li></a>
+                   </ul>
+                </div>
+                </nav>
+                    <div class="logo-container">
+                <img class="logo" src="../img/logo_pacinotti.png" alt="Logo"> 
+                </div>
+            <nav>
+              <div class="nav-container">
+                <ul class="nav-tabs">
+                </div>
+              </nav>  
+            </div>       
+        </header>
+        
+        <div class="content-container"> 
+     <!-- SIDEBAR GENERI-->       
+  <span class="opennav" onclick="openNav()">&#9776; Clicca qui per esplorare tutti i generi.</span> 
+<div id="mySidenav" class="sidenav">
+    <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#Romanzo">Romanzo</a>
+    <a href="#">Romanzo Storico</a>
+    <a href="#">Romanzo di Formazione</a>
+    <a href="#">Giallo</a>
+    <a href="#">Thriller</a>
+    <a href="#">Horror</a>
+    <a href="#">Avventura </a>
+    <a href="#">Azione</a>
+    <a href="#">Fumetti</a>
+    <a href="#">Manga</a>
+    <a href="#">Fantascienza</a>
+    <a href="#">Distopia</a>
+    <a href="#">Utopia</a>
+    <a href="#">Fantasy</a>
+    <a href="#">Young Adult</a>
+    <a href="#">Erotico</a>
+    <a href="#">Fiaba</a>
+    <a href="#">Ragazzi</a>
+    <a href="#">Bambini</a>
+  </div>
+  <!-- SEARCH BOX -->
+ 
+<div class="drop-down">
+  <button onclick="myFunction()" class="dropbtn">&dArr; Cerca qui &dArr;</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Cerca.." id="myInput">
+    <a href="#">Titoli</a>
+    <a href="#">Generi</a>
+    <a href="#">Autore</a>
+    <a href="#">Anno</a>
+  </div>
+</div>
+</div> 
+<!-- LIBRI HOME  -->
+<div class="genere-container">
+  <div class="genere"> &bull; Libri più richiesti        </div>
+</div>
+    <div class="card-container">     
+      <div class="card">
+                 <img src="../img/deisepolcri.jpg" width="170px" height="250px">
+                 <p id="descrizionearticolo"> Sepolcri <br>Ugo Foscolo        </p>
+                 <button type="button">PRENOTA</button>  
+            </div><div class="card">        
+                <img src="../img/ilpiacere.jpg" width="170px" height="250px">
+                <p id="descrizionearticolo"> Il Piacere <br> Gabriele d'Annunzio      </p>
+
+            </div><div class="card">  
+                  <img src="../img/iltrionfo.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> Il Trionfo della morte <br> Gabriele d'Annunzio         </p>
+                  
+             </div><div class="card">  
+                 <img src="../img/imalavoglia.jpg" width="170px" height="250px">
+                 <p id="descrizionearticolo"> I Malavoglia <br>Giovanni Verga       </p>
+            </div>  <div class="card">  
+                  <img src="../img/infinito.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> L'infinito <br>Giacomo Leopardi         </p>
+            </div>  <div class="card">  
+                 <img src="../img/malpelo.jpg" width="170px" height="250px">
+                 <p id="descrizionearticolo"> Rosso Malpelo <br>Ugo Foscolo        </p>
+            </div>   <div class="card">    
+                  <img src="../img/ossidiseppia.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> Ossi di Seppia <br>Eugenio Montale      </p>
+            </div>   <div class="card">  
+                 <img src="../img/promessisposi.jpg" width="170px" height="250px">
+                 <p id="descrizionearticolo"> I promessi Sposi <br>Alessandro Manzoni         </p>
+                </div>
+                <div class="card">  
+                  <img src="../img/cristo.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> Diario Segreto del Conte MonteCristo <br>Tom Reiss          </p>
+                 </div>
+                 <div class="card">  
+                  <img src="../img/kafka.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> Il processo <br> Franz Kafka        </p>
+                 </div> 
+                 <div class="card">  
+                  <img src="../img/SignMosche.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> Il Signore delle Mosche <br> William Golding         </p>
+                 </div>
+                 <div class="card">  
+                  <img src="../img/naruto.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> Naruto <br>Jump Comics        </p>
+                 </div>
+                 <div class="card">  
+                  <img src="../img/ciccio.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> Io, Me, e Me Stesso <br> CiccioGamer89         </p>
+                 </div>
+                 <div class="card">  
+                  <img src="../img/conan.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> Detective Conan <br>Gosho Aoyama        </p>
+                 </div>
+                 <div class="card">  
+                  <img src="../img/lyon.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> A caccia di Entity  <br> LyonWGF       </p>
+                 </div>
+                 <div class="card">  
+                  <img src="../img/cicciogamer.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo">Fortnite Trucchi e Segreti <br>CiccioGamer89      </p>
+                 </div>
+                 <div class="genere-container">
+                  <div class="genere-container">
+
+                    <div class="genere"> &bull; Romanzo<a name="Romanzo">
+                              </div></a>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <img src="../img/deisepolcri.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> Sepolcri <br>Ugo Foscolo        </p>
+             </div><div class="card">        
+                 <img src="../img/ilpiacere.jpg" width="170px" height="250px">
+                 <p id="descrizionearticolo"> Il Piacere <br> Gabriele d'Annunzio      </p>
+             </div><div class="card">  
+                   <img src="../img/iltrionfo.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo"> Il Trionfo della morte <br> Gabriele d'Annunzio         </p>
+              </div><div class="card">  
+                  <img src="../img/imalavoglia.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> I Malavoglia <br>Giovanni Verga       </p>
+             </div>  <div class="card">  
+                   <img src="../img/infinito.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo"> L'infinito <br>Giacomo Leopardi         </p>
+             </div>  <div class="card">  
+                  <img src="../img/malpelo.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> Rosso Malpelo <br>Ugo Foscolo        </p>
+             </div>   <div class="card">    
+                   <img src="../img/ossidiseppia.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo"> Ossi di Seppia <br>Eugenio Montale      </p>
+             </div>   <div class="card">  
+                  <img src="../img/promessisposi.jpg" width="170px" height="250px">
+                  <p id="descrizionearticolo"> I promessi Sposi <br>Alessandro Manzoni         </p>
+                 </div>
+                 <div class="card">  
+                   <img src="../img/cristo.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo"> Diario Segreto del Conte MonteCristo <br>Tom Reiss          </p>
+                  </div>
+                  <div class="card">  
+                   <img src="../img/kafka.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo"> Il processo <br> Franz Kafka        </p>
+                  </div> 
+                  <div class="card">  
+                   <img src="../img/SignMosche.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo"> Il Signore delle Mosche <br> William Golding         </p>
+                  </div>
+                  <div class="card">  
+                   <img src="../img/naruto.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo"> Naruto <br>Jump Comics        </p>
+                  </div>
+                  <div class="card">  
+                   <img src="../img/ciccio.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo"> Io, Me, e Me Stesso <br> CiccioGamer89         </p>
+                  </div>
+                  <div class="card">  
+                   <img src="../img/conan.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo"> Detective Conan <br>Gosho Aoyama        </p>
+                  </div>
+                  <div class="card">  
+                   <img src="../img/lyon.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo"> A caccia di Entity  <br> LyonWGF       </p>
+                  </div>
+                  <div class="card">  
+                   <img src="../img/cicciogamer.jpg" width="170px" height="250px">
+                   <p id="descrizionearticolo">Fortnite Trucchi e Segreti <br>CiccioGamer89      </p>
+                  </div>
+  </div> 
+
+
+  <script>
+    
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+  </script>
+ <!-- FOOTER -->
+ <div class="footer">
+    UDA 2022
+    </div>
+</div> 
+</body>
+</html>
