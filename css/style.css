@@ -316,7 +316,8 @@ margin-top: 15%;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {padding-top: 15px;
+	}
   .sidenav a {font-size: 18px;}
 }
 
@@ -335,7 +336,7 @@ margin-top: 15%;
 	@media screen and (max-width: 821px) {
 		.opennav{
 			font-size: 20px;
-			margin-left: 30px; 
+			margin-left: 50px; 
 		}
 	}
 	/* UDA 2022 FOOTER*/
@@ -393,7 +394,7 @@ margin-top: 15%;
 		width: 100%;
 		height : 100%;
 		overflow-y: scroll;
-		padding-bottom: 300px;
+		padding-bottom: 50px;
 	  }
 	
 	  .card{
@@ -779,6 +780,7 @@ margin-top: 15%;
 	.genere-container::-webkit-scrollbar {
 		display: none;
 	  }
+	  
 	  .genere{
 		color: #fff;
 		margin: 0;
@@ -787,4 +789,195 @@ margin-top: 15%;
 		white-space: nowrap;
   		overflow: hidden;
   		text-overflow: ellipsis;
+		background-color: #000;
+		z-index: 0;
 	  }
+	
+
+	  /* AGGIUNTA LIBRI */
+
+table input[type=text] {
+  width: 100%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid none;
+  outline: none;
+}
+
+.table input[type=text]:focus {
+  border: 3px solid none;
+}
+
+#rcorners4 {
+  border-radius: 15px;
+  padding: 15px;
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  width: 420px;
+  height: 150px; 
+}
+
+.custom-select {
+  width: 40%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid none;
+  outline: none;
+}
+
+.custom-select :focus {
+  border: 3px solid none;
+}
+
+.button25 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align:center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px none;
+  position:relative;
+  right:-85px;
+}
+.button25:hover{
+	color: #818181;
+}
+.copie input[type=text] {
+  width: 40%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid none;
+  outline: none;
+}
+
+.copie input[type=text]:focus {
+  border: 3px solid none;
+}
+#FileChange{
+	color: #fff;
+}
+@media screen and (max-width: 821px){
+	table input[type=text] {
+		width: 80%;
+		padding: 8px 15px;
+		margin: 8px;
+		box-sizing: border-box;
+		border: 3px solid none;
+		outline: none;
+	  }
+	  
+	  .table input[type=text]:focus {
+		border: 3px solid none;
+	  }
+	  
+	  #rcorners4 {
+		border-radius: 15px;
+		padding: 15px;
+		background: rgba(255,255,255,0.04);
+		box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+		z-index: 999;
+		text-align: center;
+		width: 300px;
+		transform: translate(10%,5%);
+		margin: 0;
+	  }
+	  
+	  .custom-select {
+		width: 40%;
+		padding: 8px 15px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		border: 3px solid none;
+		outline: none;
+	  }
+	  
+	  .custom-select :focus {
+		border: 3px solid none;
+	  }
+	  
+	  .button25 {
+		display: inline-block;
+		padding: 10px 20px;
+		font-size: 24px;
+		cursor: pointer;
+		text-align:center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: #000;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px none;
+		position:relative;
+		right:-85px;
+	  }
+	  .button25:hover{
+		  color: #818181;
+	  }
+	  .copie input[type=text] {
+		width: 40%;
+		padding: 8px 15px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		border: 3px solid none;
+		outline: none;
+	  }
+	  
+	  .copie input[type=text]:focus {
+		border: 3px solid none;
+	  }
+	  #FileChange{
+		  color: #fff;
+	  }
+	
+}
+/* SEARCH BAR AMM-HOME */
+
+.dropbtn1 {
+	margin-right: 30px;
+	background-color: #000;
+	color: #fff;
+	padding: 15px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	width: 150px;
+      position: block;
+      right: 10px;
+  }
+  
+  .dropbtn1:hover, .dropbtn1:focus {
+	background-color: #fff;
+	color: black;
+  }
+  
+@media screen and (max-width:821px) {
+	
+.drobtn1{
+	margin-right: 30px;
+	background-color: #000;
+	color: #fff;
+	padding: 15px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	width: 20px;
+      position: block;
+      right: 10px;
+  }
+  
+  
+  .dropbtn1:hover, .dropbtn1:focus {
+	background-color: #fff;
+	color: black;
+  }
+}
