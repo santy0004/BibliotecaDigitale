@@ -17,7 +17,7 @@
                 <nav>
                     <input class="hidden" type="checkbox" id="menuToggle">          
                      <label class="menu-btn" for="menuToggle">
-                        <div class="menu"></div>
+                        </label><div class="menu"></div>
                         <div class="menu"></div>
                         <div class="menu"></div>
                         <div class="menu"></div>
@@ -25,20 +25,20 @@
                     </label>  
                     <div class="nav-container">
                     <ul class="nav-tabs">
-                        <li class="nav-tab"><a href="indexlog.html">Home</a></li>						
-                        <li class="nav-tab"><a href="Orariutente.html">Orari</a></li>
+                        <li class="nav-tab"><a href="indexlog.html">Home</a></li>
+                        <li class="nav-tab"><a href="">Orari</a></li>
                         <div class="dropdown">
                             <li class="dropbottn">
-							<li class="nav-tab">Contatti</li></li>
+                                <li class="nav-tab">Contatti</a></li> 
                               <i class="fa fa-caret-down"></i>
                             <div class="dropdowncontent">
                               <a href="https://www.itipacinotti.edu.it/iti/" target="_blank">I.I.S Pacinotti</a>
-                              <a href="Contatto3lutente.html">Classe 3L</a>
-                              <a href="Contatto4lutente.html">Classe 4L</a>
-                              <a href="Contatto5lutente.html">Classe 5L</a>
+                              <a href="../Contatti/Contatto3l.html">Classe 3L</a>
+                              <a href="../Contatti/Contatto4l.html">Classe 4L</a>
+                              <a href="../Contatti/Contatto5sl.html">Classe 5L</a>
                             </div>
                           </div> 
-                        <li class="nav-tab"><a href="./Libri_PrestUTE.html"> Prestito</a></li>
+                          <li class="nav-tab"><a href="./Libri_PrestUTE.html"> Prestito</a></li>
 						<li class="nav-tab log"><img class="accountlogo" src="../img/account.jpg" alt="ACCOUNT"></li></li>
                               <i class="fa fa-caret-down"></i>
                             <div class="dropdowncontent">
@@ -69,54 +69,61 @@
 				</nav>
 			</div>     
         </header>
-
-<table style="background-color:transparent; border-spacing: 10spx;">
-	<tr>
-		<th style="color:white;  background-color:black;">NOME UTENTE</th>
-		<th style="color:white;  background-color:black;">vtmrd</th>
-		<th style="background-color:transparent;"><button class="button26">MODIFICA</button></th>
-	</tr>
-	<tr>
-		<th style="color:white;  background-color:black;">EMAIL</th>
-		<th style="color:white;  background-color:black;">mewhen@ioquando.it</th>
-		<th style="background-color:transparent;"><button class="button26">MODIFICA</button></th>
-	</tr>
-	<tr>
-		<th style="color:white;  background-color:black;">TELEFONO</th>
-		<th style="color:white;  background-color:black;">4204206969</th>
-		<th style="background-color:transparent;"><button class="button26">MODIFICA</button></th>
-	</tr>
-	<tr>
-		<th></th>
-		<th></th>
-		<th><a href="../index.html"><button class="button26">LOGOUT</button></a></th>
-	</tr>
-	<tr>
-		<th></th>
-		<th></th>
-		<th ><button class="button26">CANCELLA ACCOUNT</button></th>
-	</tr>
-
-</table>
-
-			</div>
-<!-- FUNZIONI APRI/CHIUDI SIDENAV --- FUNZIONE MENU CERCA VISIBILE  -->
-  <script>
-				function openNav() {
-				  document.getElementById("mySidenav").style.width = "250px";
-				}
-				
-				function closeNav() {
-				  document.getElementById("mySidenav").style.width = "0";
-				}
-				function myFunction() {
-				document.getElementById("myDropdown").classList.toggle("show");
-				}
-			</script>
-			<!-- FOOTER -->
-			<div class="footer">
-				UDA 2022
-			</div>
-		</div>
-	</body>
+        <!-- TABELLA ORARI -->
+        <div class="tab_center">
+        <table>
+			<tbody>
+			<tr id="bordo" >
+				<td id="bordo">GIORNI</td>
+				<td id="bordo">MATTINA</td>
+				<td id="bordo">POMERIGGIO</td>
+			</tr >
+			<tr id="bordo">
+				<td id="bordo">LUNEDI</td>
+				<td id="bordo">9:00-12:20</td>
+				<td id="bordo">CHIUSO</td>
+			</tr>
+			<tr id="bordo">
+				<td id="bordo">MARTEDI</td>
+				<td id="bordo">9:00-12:20</td>
+				<td id="bordo">17:30-19:30</td>
+			</tr>
+			<tr id="bordo">
+				<td id="bordo">MERCOLEDI</td>
+				<td id="bordo">9:00-12:20</td>
+				<td id="bordo">17:30-19:30</td>
+			</tr >
+			<tr id="bordo">
+				<td id="bordo">GIOVEDI</td>
+				<td id="bordo">9:00-12:20</td>
+				<td id="bordo">17:30-19:30</td>
+			</tr>
+			<tr id="bordo">
+				<td id="bordo">VENERDI</td>
+				<td id="bordo">9:00-12:20</td>
+				<td id="bordo">17:30-19:30</td>
+			</tr>
+			<tr id="bordo">
+				<td id="bordo">SABATO</td>
+				<td id="bordo">9:00-12:20</td>
+				<td id="bordo">CHIUSO</td>
+			</tr >
+			<tr id="bordo">
+				<td id="bordo">DOMENICA</td>
+				<td id="bordo">9:00-12:20</td>
+				<td id="bordo">CHIUSO</td>
+            </tr>
+		</tbody>
+		</table>
+        </div>
+     
+    
+    
+    
+    
+    
+    
+    
+</div>
+</body>
 </html>

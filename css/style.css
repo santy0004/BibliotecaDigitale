@@ -18,7 +18,7 @@ body {
   -o-background-size: cover;
   background-size:cover;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 /* RESPONSIVE */
 @media (max-width: 821px){
@@ -494,8 +494,32 @@ margin-top: 15%;
 	margin: 0;
   }
   
+  .dropdowncontentute {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	width: 110px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	overflow-y: none;
+  }
+  .dropdowncontentute a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	overflow-y: none;
+	
+  }
+  .dropdowncontentute a:hover {
+	background-color: #ddd;
+  }
   
-  
+  .dropdown:hover .dropdowncontentute {
+	display: block;
+  }
   .dropdowncontent {
 	display: none;
 	position: absolute;
@@ -512,6 +536,7 @@ margin-top: 15%;
 	text-decoration: none;
 	display: block;
 	text-align: left;
+	
   }
   
   .dropdowncontent a:hover {
@@ -979,3 +1004,85 @@ table input[type=text] {
 	color: black;
   }
 }
+
+/* AGGIUNTA PER SEZIONE UTENTE*/
+.center {
+	text-align: center;
+}
+.p1{
+	height:60px;
+}
+.btnordina {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 170px;
+  transition-duration: 0.5s;
+}
+.btnordina:hover {
+ background-color: #818181;
+}
+.info {
+  color: black;
+  width: 170px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  position: relative;	
+}
+
+.dropinfo {
+  position: relative;
+  display: block;	
+}
+
+.dropinfo-content {
+  display: none;
+  position: absolute;
+  background-color: #818181;
+  min-width: 400px;
+  z-index: 1;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.dropinfo-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropinfo-content a:hover {background-color: #818181;}
+
+.dropinfo:hover .dropinfo-content {display: block;}
+
+.dropinfo:hover .info {background-color: #818181;}
+
+.accountlogo{
+		width: 80px;
+		height: 80px;
+	}
+	.button26 {
+		display: inline-block;
+		padding: 5px 10px;
+		font-size: 20px;
+		cursor: pointer;
+		text-align:center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: #000;
+		border: none;
+		border-radius: 10px;
+		box-shadow: 0 9px none;
+		position:relative;
+		right:-85px;
+	  }
+	  .button26:hover{
+		  color: #818181;
+	  }
